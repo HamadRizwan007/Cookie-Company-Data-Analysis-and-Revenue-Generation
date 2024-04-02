@@ -1,0 +1,30 @@
+// Total revenue and total cost for each customer
+EVALUATE
+SUMMARIZE(
+    Orders1,
+    Orders1[Customer ID],
+    "Total Revenue", SUM(Orders1[Revenue]),
+    "Total Cost", SUM(Orders1[Cost])
+)
+
+// Retrieves all columns from the Orders table where the revenue is greater than $1000
+EVALUATE
+FILTER(Orders1, Orders1[Revenue] > 1000)
+
+// Retrieves the top 10 customers based on revenue
+EVALUATE
+TOPN(10, SUMMARIZE(Orders1, Orders1[Customer ID], "Total Revenue", SUM(Orders1[Revenue])), [Total Revenue], DESC)
+
+// Year-to-Date revenue for each customer
+EVALUATE
+SUMMARIZE(
+    FILTER(Orders1, YEAR(Orders1[Order Date]) = YEAR(TODAY())),
+    Orders1[Customer ID],
+    "YTD Revenue", CALCULATE(SUM(Orders1[Revenue]), DATESYTD(Orders1[Order Date]))
+)
+
+// Retrieves data for a specific customer ID
+DEFINE
+    VAR SelectedCustomer = "325698"
+EVALUATE
+FILTER(Orders1, Orders1[Customer ID] = VALUE(SelectedCustomer))
