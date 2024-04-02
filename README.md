@@ -14,16 +14,33 @@ In this project, we have performed the following tasks:
 
 4. **Report Generation**: We utilized Power BI to create visually appealing and informative reports. These reports present key findings and insights derived from the data analysis process.
 
+5. **DAX Queries and Advanced Calculations**: Dive into advanced calculations and queries using DAX (Data Analysis Expressions). Explore the provided DAX query files to understand how to manipulate data effectively.
 
-## Usage
+### Reports
 
-1. **Data Cleaning and Preprocessing**: Use the scripts provided in the `scripts/` directory to clean and preprocess the raw data.
+Browse through our collection of Power BI report files (.pbix) showcasing various data analysis and visualization projects. These reports present key insights derived from our data analysis efforts.
 
-2. **Database Linking**: Utilize the scripts for database linking to establish relationships between different tables based on primary and foreign keys.
+### DAX Queries
 
-3. **Data Analysis**: Run the analysis script to perform various analyses on the linked data.
+Explore DAX query files (.dax) demonstrating advanced calculations and queries for data manipulation. These queries are essential for performing complex calculations and extracting meaningful information from your data.
 
-4. **Report Generation**: Open the Power BI file (`report_generation.pbix`) to view the generated reports and visualizations. Sample screenshots of the reports are provided below.
+### Data Models
+
+Download Power BI data model files (.pbit) illustrating data relationships, transformations, and modeling techniques. These models serve as a foundation for effective data analysis and visualization.
+
+## Getting Started
+
+To embark on your Power BI data analysis journey, follow these steps:
+
+1. **Install Power BI Desktop**: Download and install Power BI Desktop, the free desktop application for data analysis and visualization.
+
+2. **Explore Sample Reports**: Browse the "Reports" folder in this repository to explore sample Power BI reports and gain insights into data visualization techniques.
+
+3. **Learn DAX Queries**: Study the DAX queries in the "DAX Queries" folder to understand advanced calculations and queries for data manipulation.
+
+4. **Experiment with Data Models**: Download the data model files from the "Data Models" folder to explore data relationships, transformations, and modeling techniques.
+
+5. **Join the Community**: Connect with other Power BI users, share insights, and stay updated on the latest developments in data analysis and visualization by joining the Power BI community.
 
 ## Sample Screenshots
 
